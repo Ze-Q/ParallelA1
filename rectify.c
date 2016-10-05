@@ -40,8 +40,8 @@ void process(char *input_filename, char *output_filename, int num_threads)
   output_height = height;
   new_image = malloc(output_width * output_height * 4 * sizeof(unsigned char));
 
-// process image in parallel, by giving rows of data to different threads
-#pragma omp parallel for num_threads(num_threads)
+  // process image in parallel, by giving rows of data to different threads
+  #pragma omp parallel for num_threads(num_threads)
   for (int i = 0; i < height; i++)
   {
     int output_i = i;
