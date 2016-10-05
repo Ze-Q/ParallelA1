@@ -1,0 +1,31 @@
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$ time ./rectify test.png test_rectify_output.png 1
+
+real    0m1.065s
+user    0m1.016s
+sys     0m0.047s
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$ time ./rectify test.png test_rectify_output.png 2
+
+real    0m1.030s
+user    0m1.031s
+sys     0m0.031s
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$ time ./rectify test.png test_rectify_output.png 4
+
+real    0m1.032s
+user    0m1.063s
+sys     0m0.016s
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$ time ./rectify test.png test_rectify_output.png 8
+
+real    0m1.049s
+user    0m1.047s
+sys     0m0.047s
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$ time ./rectify test.png test_rectify_output.png 16
+
+real    0m1.034s
+user    0m1.094s
+sys     0m0.031s
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$ time ./rectify test.png test_rectify_output.png 32
+
+real    0m1.030s
+user    0m1.047s
+sys     0m0.031s
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$
