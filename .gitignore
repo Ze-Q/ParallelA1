@@ -1,2 +1,4 @@
 test_equality
 convolve
+rectify
+pool
