@@ -1,31 +1,31 @@
-zed@SURFACEZED:/mnt/c/Users/zeqzh/OneDrive/Documents/GitHub/ParallelA1$ time ./convolve test.png test_convolve_output.png 1
+zed@SURFACEZED:/mnt/c/Users/zeqzh/OneDrive/Documents/GitHub/ParallelA1$ time ./convolve bench_test.png bench_test_output.png 1
 
-real    0m1.102s
-user    0m1.063s
+real    0m1.341s
+user    0m1.313s
 sys     0m0.031s
-zed@SURFACEZED:/mnt/c/Users/zeqzh/OneDrive/Documents/GitHub/ParallelA1$ time ./convolve test.png test_convolve_output.png 2
+zed@SURFACEZED:/mnt/c/Users/zeqzh/OneDrive/Documents/GitHub/ParallelA1$ time ./convolve bench_test.png bench_test_output.png 2
 
-real    0m0.998s
-user    0m1.094s
+real    0m1.233s
+user    0m1.328s
 sys     0m0.031s
-zed@SURFACEZED:/mnt/c/Users/zeqzh/OneDrive/Documents/GitHub/ParallelA1$ time ./convolve test.png test_convolve_output.png 4
+zed@SURFACEZED:/mnt/c/Users/zeqzh/OneDrive/Documents/GitHub/ParallelA1$ time ./convolve bench_test.png bench_test_output.png 4
 
-real    0m0.972s
-user    0m1.266s
-sys     0m0.016s
-zed@SURFACEZED:/mnt/c/Users/zeqzh/OneDrive/Documents/GitHub/ParallelA1$ time ./convolve test.png test_convolve_output.png 8
+real    0m1.243s
+user    0m1.531s
+sys     0m0.031s
+zed@SURFACEZED:/mnt/c/Users/zeqzh/OneDrive/Documents/GitHub/ParallelA1$ time ./convolve bench_test.png bench_test_output.png 8
 
-real    0m0.987s
-user    0m1.172s
-sys     0m0.016s
-zed@SURFACEZED:/mnt/c/Users/zeqzh/OneDrive/Documents/GitHub/ParallelA1$ time ./convolve test.png test_convolve_output.png 16
+real    0m1.223s
+user    0m1.406s
+sys     0m0.063s
+zed@SURFACEZED:/mnt/c/Users/zeqzh/OneDrive/Documents/GitHub/ParallelA1$ time ./convolve bench_test.png bench_test_output.png 16
 
-real    0m0.971s
-user    0m1.125s
-sys     0m0.047s
-zed@SURFACEZED:/mnt/c/Users/zeqzh/OneDrive/Documents/GitHub/ParallelA1$ time ./convolve test.png test_convolve_output.png 32
+real    0m1.204s
+user    0m1.406s
+sys     0m0.031s
+zed@SURFACEZED:/mnt/c/Users/zeqzh/OneDrive/Documents/GitHub/ParallelA1$ time ./convolve bench_test.png bench_test_output.png 32
 
-real    0m0.985s
-user    0m1.172s
-sys     0m0.047s
+real    0m1.230s
+user    0m1.359s
+sys     0m0.094s
 zed@SURFACEZED:/mnt/c/Users/zeqzh/OneDrive/Documents/GitHub/ParallelA1$
