@@ -23,20 +23,20 @@ void process(char *input_filename, char *output_filename, int num_threads)
 
   // process image in parallel, by giving each byte of RGBA data to different threads
   #pragma omp parallel for num_threads(num_threads)
-  // repeat for RGBA byte separately
   for (int offset = 0; offset < 4; offset++)
   {
-    for (int i = 2; i < height; i+=2)
+    for (int i = 2; i < height + 2; i += 2)
     {
-      for (int j = 2; j < width; j+=2)
+      for (int j = 2; j < width + 2; j += 2)
       {
         int maxVal = 0;
+        
         // apply 2x2 max-pooling
         //#pragma omp parallel for reduction(max : maxVal)
-        for (int ii = i-2; ii < i; ii++)
+        for (int ii = i - 2; ii < i; ii++)
         {
           //#pragma omp parallel for reduction(max : maxVal)
-          for (int jj = j-2; jj < j; jj++)
+          for (int jj = j - 2; jj < j; jj++)
           {
             int idx = 4 * (width * ii + jj) + offset;
             if (image[idx] > maxVal)
@@ -45,7 +45,7 @@ void process(char *input_filename, char *output_filename, int num_threads)
             }
           }
         }
-        new_image[4 * (output_width * i/2 + j/2) + offset] = maxVal;
+        new_image[4 * (output_width * (i / 2 - 1) + (j / 2 - 1)) + offset] = maxVal;
       }
     }
   }
