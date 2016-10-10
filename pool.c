@@ -28,10 +28,10 @@ void process(char *input_filename, char *output_filename, int num_threads)
   {
     // for every 2x2 indepedent pools
     #pragma omp parallel for num_threads(num_threads)
-    for (int i = 0; i < output_width; i++)
+    for (int i = 0; i < output_width + 2; i++)
     {
       #pragma omp parallel for num_threads(num_threads)
-      for (int j = 0; j < output_height; j++)
+      for (int j = 0; j < output_height + 1; j++)
       {
         // apply 2x2 max-pooling
         int maxVal = 0;
