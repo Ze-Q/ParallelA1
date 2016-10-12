@@ -1,0 +1,31 @@
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$ time ./pool test.png test_pool_output.png 1
+
+real    0m0.480s
+user    0m0.406s
+sys     0m0.047s
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$ time ./pool test.png test_pool_output.png 2
+
+real    0m0.467s
+user    0m0.453s
+sys     0m0.031s
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$ time ./pool test.png test_pool_output.png 4
+
+real    0m0.446s
+user    0m0.453s
+sys     0m0.063s
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$ time ./pool test.png test_pool_output.png 8
+
+real    0m0.455s
+user    0m0.484s
+sys     0m0.047s
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$ time ./pool test.png test_pool_output.png 16
+
+real    0m0.446s
+user    0m0.500s
+sys     0m0.016s
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$ time ./pool test.png test_pool_output.png 32
+
+real    0m0.445s
+user    0m0.406s
+sys     0m0.109s
+iceinn@DESKTOP-2A51TEM:/mnt/c/Users/Ice/Desktop/Parallel_LAB1$
