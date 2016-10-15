@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-std=c99 -Wall -fopenmp
 
-all: convolve
+all: rectify pool convolve 
 
 test_equality: test_equality.c
 	$(CC) $(CFLAGS) -o test_equality test_equality.c lodepng.c -lm
